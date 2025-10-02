@@ -20,7 +20,6 @@
 - [Требования и установка](#требования-и-установка)  
 - [Структура репозитория](#структура-репозитория)  
 - [Репродьюсибилити](#репродьюсибилити)  
-- [Лицензия данных и атрибуция](#лицензия-данных-и-атрибуция)  
 - [Идеи для дальнейшей работы](#идеи-для-дальнейшей-работы)
 
 ---
@@ -68,7 +67,7 @@
 ---
 
 ## Файнтюнинг (fine-tuning)
-- Базовая модель: `bert-base-multilingual-cased`.  
+- Базовая модель: `bert-base-multilingual-cased`.  [link](https://huggingface.co/google-bert/bert-base-multilingual-cased)
 - Head: linear, num_labels = len(BIO_LABELS).  
 - Bias инициализируется лог-частотами классов по трейну.  
 - EarlyStopping patience=4 по Macro-F1.  
@@ -143,11 +142,10 @@ README.md
 
 ---
 
-## Лицензия данных и атрибуция
-Open Food Facts → ODbL 1.0.  
-Укажите OFF, дату выгрузки, ссылку.  
-
----
+## Внешние датасеты 
+1. [OpenFood facts](https://huggingface.co/datasets/openfoodfacts/product-database)
+   Из этого сета мы взяли Volume, Percent (генерировали дополнительно)
+2. Так же мы спарсили бренды с сайта пятерочки по API каталога. 
 
 ## Идеи для дальнейшей работы
 - Layer-wise LR decay.  
