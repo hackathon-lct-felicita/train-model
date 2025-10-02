@@ -145,7 +145,7 @@ README.md
 ## Внешние датасеты 
 1. [OpenFood facts](https://huggingface.co/datasets/openfoodfacts/product-database)
    Из этого сета мы взяли Volume, Percent (генерировали дополнительно)
-2. Так же мы спарсили бренды с сайта пятерочки по API каталога. 
+2. Так же мы спарсили [бренды](https://github.com/hackathon-lct-felicita/train-model/blob/main/x5-api-brands.json)_ с сайта пятерочки по API каталога. 
 
 ## Идеи для дальнейшей работы
 - Layer-wise LR decay.  
